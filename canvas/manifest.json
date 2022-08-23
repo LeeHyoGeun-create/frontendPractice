@@ -1,0 +1,38 @@
+{
+  "author": "HyoGeun-Lee",
+  "manifest_version": 2,
+  "default_locale": "ko",
+  "name": "Color Blind",
+  "short_name": "color",
+  "description": "Extension Program for Improving Web Accessibility Initiative(WAI) of color-blind people.",
+  "version": "0.0.1",
+  "version_name": "preview",
+
+  "browser_action": {
+      "default_icon": "symbol_color.png",
+      "default_popup": "popup.html"
+  },
+
+  "icons": {
+      "128": "symbol_color.png"
+  },
+
+  "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+  },
+
+  "permissions": [
+      "activeTab", "http://*/*", "https://*/*"
+  ],
+
+  "content_scripts": [{
+      "matches": ["file://home.html"],
+      "js": ["scripts.js"],
+      "css": ["css.css"]
+  }],
+
+  "background": {
+      "scripts": ["background.js"],
+  }
+}
