@@ -1,0 +1,87 @@
+:root {
+  /* color */
+  --color-red: red;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-top: 10%;
+}
+
+.input {
+  background-color: green;
+  margin-top: 5%;
+}
+
+.listSection {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.listSection__li {
+  background-color: red;
+  position: relative;
+  height: 6.2rem;
+}
+
+.listSection__article {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 1rem 0;
+}
+
+.check {
+  background-color: rgb(80, 3, 3);
+}
+
+.listSection__text {
+  font-size: 3rem;
+  margin-right: 20rem;
+}
+
+.listSection__btn {
+  font-size: 3rem;
+}
